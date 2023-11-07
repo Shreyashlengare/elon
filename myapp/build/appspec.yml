@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/html/
+file_exists_behaviour: OVERWRITE
+
+hooks:  
+  BeforeInstall:
+    - location: scripts/server_clear.sh
+      timeout: 300
+      runas: root 
+  ApplicationStop:
+    - location: scripts/server_stop.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/server_start.sh
+      timeout: 3600
+      runas: root
