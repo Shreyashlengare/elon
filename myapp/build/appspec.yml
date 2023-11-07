@@ -11,10 +11,6 @@ hooks:
     - location: scripts/install_nginx.sh
       timeout: 300
       runas: root 
- # ApplicationStop:
- #   - location: scripts/server_stop.sh
-  #    timeout: 300
-  #    runas: root
   ApplicationStart:
     - location: scripts/start_nginx.sh
       timeout: 3600
