@@ -11,6 +11,9 @@ phases:
 
   build:
     commands:
+      - echo Installing NGINX
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
       - npm run build
 
   post_build:
