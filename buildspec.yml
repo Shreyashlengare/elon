@@ -22,13 +22,13 @@ phases:
 
 artifacts:
   files: 
-    - elonfront/scripts/*.sh
+    - scripts/*.sh
     - elonfront/public/**
     - elonfront/src/**
     - appspec.yml
-  base-directory: 'build'
+  base-directory: 'elonfront'
 
 cache:
   paths:
-    - 'elonfront/build/node_modules/**/*'
+    - 'elonfront/node_modules/**/*'
 
