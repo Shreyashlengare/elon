@@ -23,7 +23,7 @@ phases:
 artifacts:
   files: 
     - 'elonfront/**/*'
-  base-directory: 'build'
+ # base-directory: 'build'
 
 cache:
   paths:
