@@ -24,11 +24,11 @@ artifacts:
   files: 
     - elonfront/scripts/*.sh
     - elonfront/appspec.yml
-    - elonfront/build/public/**
-    - elonfront/build/src/**
-    - elonfront/build/package.json
-    - elonfront/build/package-lock.json
-  base-directory: 'elonfront'
+    - elonfront/public/**
+    - elonfront/src/**
+    - elonfront/package.json
+    - elonfront/package-lock.json
+  base-directory: '/'
 
 cache:
   paths:
