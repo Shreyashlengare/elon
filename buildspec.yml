@@ -25,6 +25,10 @@ artifacts:
     - elonfront/*
     - scripts/*.sh
     - appspec.yml
+    - public/*
+    - src/*
+    - package.json
+    - package_lock.json
   base-directory: 'build'
 
 cache:
