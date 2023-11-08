@@ -23,11 +23,6 @@ phases:
 artifacts:
   files: 
     - 'build/**/*'
-    - 'appspec.yml'
-    - 'scripts/install_nginx.sh'
-    - 'scripts/server_clear.sh'
-    - 'scripts/start_nginx.sh'
-    - 'scripts/stop_nginx.sh'
   base-directory: 'build'
 
 cache:
