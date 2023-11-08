@@ -23,12 +23,10 @@ phases:
 artifacts:
   files: 
     - elonfront/scripts/*.sh
-    - appspec.yml
     - elonfront/public/**
     - elonfront/src/**
-    - package.json
-    - package-lock.json
-  base-directory: '/'
+    - appspec.yml
+  base-directory: 'build'
 
 cache:
   paths:
