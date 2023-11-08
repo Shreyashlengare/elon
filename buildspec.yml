@@ -26,7 +26,7 @@ artifacts:
     - elonfront/public/**
     - elonfront/src/**
     - appspec.yml
-  base-directory: '/'
+  base-directory: 'build'
 
 cache:
   paths:
