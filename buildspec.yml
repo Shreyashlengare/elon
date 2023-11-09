@@ -7,6 +7,7 @@ env:
 phases:
   pre_build:
     commands:
+      - sudo apt install npm -y
       - npm install
 
   build:
@@ -24,5 +25,9 @@ artifacts:
     - package.json
     - appspec.yml
     - scripts/**/*
+
+cache:
+  paths:
+    - '/app/node_modules/**/*'
 
 
