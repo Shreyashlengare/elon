@@ -11,9 +11,6 @@ phases:
 
   build:
     commands:
-      - echo Installing NGINX
-      - sudo apt-get update
-      - sudo apt-get install nginx -y
       - npm run build
 
   post_build:
@@ -22,13 +19,10 @@ phases:
 
 artifacts:
   files: 
-    - scripts/*.sh
-    - elonfront/public/**
-    - elonfront/src/**
+    - public/**/*
+    - src/**/*
+    - package.json
     - appspec.yml
-  base-directory: 'build'
+    - scripts/**/*
 
-cache:
-  paths:
-    - 'elonfront/node_modules/**/*'
 
