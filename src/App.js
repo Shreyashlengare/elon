@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Welcome from './Pages/Welcome';
 

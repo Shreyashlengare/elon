@@ -9,8 +9,6 @@ phases:
     commands:
       - sudo apt update
       - sudo apt install npm -y
-      - sudo npm install
-      - sudo npm install eslint eslint-config-react-app --save-dev
       - sudo npm update
 
   build:
