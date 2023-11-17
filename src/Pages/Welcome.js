@@ -17,7 +17,7 @@ function Welcome() {
         <>
             <div class="login-page">
                 <div class="form">
-                    <h1> FinMeadows  </h1>
+                    <h1> Fin Meadows  </h1>
                     {data ? data : ''}
                     <form class="register-form">
                         <input type="text" placeholder="name" />
