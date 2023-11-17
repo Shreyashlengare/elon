@@ -4,7 +4,7 @@ os: linux
 
 files:
   - source: /
-    destination: /app
+    destination: /var/www/html/myreactapp
     overwrite: true
 permissions:
   - object: /

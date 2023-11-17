@@ -9,14 +9,17 @@ phases:
     commands:
       - sudo apt update
       - sudo apt install npm -y
-      - npm install
+      - sudo npm install
+      - sudo npm install eslint eslint-config-react-app --save-dev
+      - sudo npm update
 
   build:
     commands:
-      - npm run build
+      - sudo npm run build
 
   post_build:
     commands:
+      - sudo npm start
       - echo "Build completed on `date`"
 
 artifacts:
