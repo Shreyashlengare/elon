@@ -9,6 +9,7 @@ phases:
     commands:
       - sudo apt update
       - sudo apt install npm -y
+      - sudo npm install
       - sudo npm update
 
   build:
@@ -25,10 +26,12 @@ artifacts:
     - src/**/*
     - package.json
     - appspec.yml
+    - build/**/*
+    - package-lock.json
     - scripts/**/*
 
 cache:
   paths:
-    - '/app/node_modules/**/*'
+    - '/node_modules/**/*'
 
 
